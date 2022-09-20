@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import celebration from '../src/images/celebration.svg'
+// import celebration from '../src/images/celebration.svg'
 // import autoAnimate from '@formkit/auto-animate'
 function App() {
   const [loading, setloading] = useState(true)
@@ -7,7 +7,7 @@ function App() {
   const [err, seterr] = useState()
   const [newtodo, setnewtodo] = useState("")
   const [list, setList] = useState([])
-  const [display, setdisplay] = useState(true)
+  // const [display, setdisplay] = useState(true)
 
   useEffect(() => {
     setloading(false)
@@ -19,7 +19,7 @@ function App() {
       seterr('Input field is required!')
     }
     else {
-      setdisplay(false)
+      // setdisplay(false)
       let newList = {
         newtodo
       }
@@ -34,24 +34,24 @@ function App() {
 
   // delete
   const del = (index) => {
-    setdisplay(true)
-    list.splice(index, 1)
-    setList([...list])
+    // setdisplay(true)
+    // list.splice(index, 1)
+    // setList([...list])
     // localStorage.removeItem('todos', JSON.stringify([...list]))
   }
 
   const edit = (index) => {
-    var edit = prompt("edit from " + "" + list[index].newtodo + "" + " to..?")
+    // var edit = prompt("edit from " + "" + list[index].newtodo + "" + " to..?")
 
-    if (edit === "") {
-      alert("the field is required")
-    }
-    else {
-      list[index].newtodo = edit;
-      setList([...list])
-      // localStorage.setItem('todos', JSON.stringify([...list]))
+    // if (edit === "") {
+    //   alert("the field is required")
+    // }
+    // else {
+    //   list[index].newtodo = edit;
+    //   setList([...list])
+    //   // localStorage.setItem('todos', JSON.stringify([...list]))
 
-    }
+    // }
   }
 
   return (
@@ -65,11 +65,11 @@ function App() {
             <span>Get things done, One item at a time.</span>
           </h1>
 
-          {display ?
-            <div className='ifelsedisplay'>
+          
+            {/* <div className='ifelsedisplay'>
               <img src={celebration} height={80} alt="" />
               <p>You have no todo's , Time to Chill <br /> Or you could add a todo.</p>
-            </div> :
+            </div>  */}
 
             <ul>
               {list.map((val, index) => (
@@ -84,7 +84,7 @@ function App() {
                   </div>
                 </li>
               ))}
-            </ul>}
+            </ul>
 
           <div className='form'>
             <label for="newitem" className='newitem'>Add a todo</label>
