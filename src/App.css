@@ -76,7 +76,7 @@ body {
 #todolist {
 	margin: 5rem auto;
 	padding: 2rem 2rem 3rem;
-	width: 100%;
+	width: 89%;
 	max-width: 500px;
 	background: #ffffff;
 	color: rgb(0, 0, 0);
@@ -151,11 +151,12 @@ body {
 	font-size: 0.8rem;
 }
 .form input {
-	flex-grow: 1;
+	align-items: center;
+	margin: 0 auto;
 	border: none;
 	background: #F3F3F4;
 	border-radius: 5px;
-	padding: 1em;
+	padding:1em;
 	font-size: initial;
 	margin-bottom: 0.5em;
 }
