@@ -56,9 +56,12 @@ function App() {
 
   return (
     <>
-      {loading ? <div class="loader-wrapper">
-        <div class="progress"></div>
-      </div> :
+      {loading ?
+        <div class="loader-wrapper">
+          <div class="progress-loader">
+            <div class="progress"></div>
+          </div>
+        </div> :
         <main id="todolist">
           <h1>
             Todo
@@ -68,7 +71,7 @@ function App() {
           {display ?
             <div className='ifelsedisplay'>
               <img src={celebration} height={80} alt="" />
-              <p>You have no todo's , Time to Chill <br /> Or you could add a todo.</p>
+              <p>You have no todo's, Time to chill.<br /> Or you could add a todo..</p>
             </div> :
 
             <ul>
