@@ -132,18 +132,19 @@ body {
 	box-shadow: 0 0 1px transparent;
 }
 .ifelsedisplay{
-	padding-top: 3em;
+	padding-top: 3.2em;
 	display: flex;
 	flex-direction: column;
 	text-align: center;
 	align-items: center;
 }
+
 /* FORM */
 .form {
 	margin-top: 3rem;
 	display: flex;
 	flex-wrap: wrap;
-	width: 100%;
+	/* width: 100%; */
 }
 .form label {
 	min-width: 100%;
@@ -151,13 +152,10 @@ body {
 	font-size: 0.8rem;
 }
 .form input {
-	align-items: center;
-	margin: 0 auto;
 	border: none;
 	background: #F3F3F4;
 	border-radius: 5px;
 	padding:1em;
-	font-size: initial;
 	margin-bottom: 0.5em;
 }
 .form button {
