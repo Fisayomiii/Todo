@@ -41,17 +41,17 @@ function App() {
   }
 
   const edit = (index) => {
-    // var edit = prompt("edit from " + "" + list[index].newtodo + "" + " to..?")
+    var edit = prompt("edit from " + "" + list[index].newtodo + "" + " to..?")
 
-    // if (edit === "") {
-    //   alert("the field is required")
-    // }
-    // else {
-    //   list[index].newtodo = edit;
-    //   setList([...list])
-    //   // localStorage.setItem('todos', JSON.stringify([...list]))
+    if (edit === "") {
+      alert("the field is required")
+    }
+    else {
+      list[index].newtodo = edit;
+      setList([...list])
+      // localStorage.setItem('todos', JSON.stringify([...list]))
 
-    // }
+    }
   }
 
   return (
