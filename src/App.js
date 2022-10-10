@@ -2,15 +2,18 @@ import React, { useEffect, useState } from 'react'
 import celebration from '../src/images/celebration.svg'
 // import autoAnimate from '@formkit/auto-animate'
 function App() {
-  const [loading, setloading] = useState(true)
   // errormessageusestate
   const [err, seterr] = useState()
   const [newtodo, setnewtodo] = useState("")
   const [list, setList] = useState([])
   const [display, setdisplay] = useState(true)
+  const [loading, setloading] = useState(false);
 
   useEffect(() => {
-    setloading(false)
+    setloading(true)
+    setTimeout(()=>{
+      setloading(false)
+    },2500)
   }, [])
 
   // adding
